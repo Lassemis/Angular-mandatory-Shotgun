@@ -1,0 +1,40 @@
+<p>register works!</p>
+<form [formGroup]="registerForm" class="example-form">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="First Name">
+    </mat-form-field>
+    
+    <mat-form-field class="example-full-width">
+        <input matInput placeholder="Last Name">
+    </mat-form-field>
+   
+    <mat-form-field class="example-full-width">
+        <input matInput placeholder="E-mail">
+    </mat-form-field>
+   
+    <mat-form-field class="example-full-width">
+        <input matInput placeholder="City">
+    </mat-form-field>
+    
+    <mat-form-field class="example-full-width">
+        <input matInput placeholder="Location of Education">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      
+      <mat-form-field class="example-full-width">
+        <textarea matInput placeholder="Driver's liscense number"></textarea>
+      </mat-form-field>
+    
+      <mat-form-field class="example-full-width">
+        <textarea matInput   placeholder="Username"></textarea>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Password"  type ="password">
+    </mat-form-field>
+    <button mat-raised-button color="primary">submit</button>
+  </form>
